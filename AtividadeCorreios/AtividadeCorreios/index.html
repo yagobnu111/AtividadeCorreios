@@ -7,7 +7,7 @@
 </head>
 <body>
     <form class="content" name="frm" action="frete2.asp" method="post" ID="Form1">
-        <fieldset style="background: #EEEEEE;">
+        <fieldset id="Form">
             <legend>Calculo de Frete</legend>
 
             <div>
@@ -21,7 +21,7 @@
             <div>
                 <span style="width:130px;">Formato:</span>
                 <span>
-                    <select name="formato" size="1">
+                    <select id="MeuSelect" name="formato" size="1">
                         <option value="1">Caixa/pacote</option>
                     </select>
                 </span>
@@ -49,7 +49,7 @@
                 <span style="width:130px;">Valor declarado:</span>
                 <span><input type="text" name="valordeclarado" value=""></span>
             </div>
-
+            
             <div>
                 <span>
                     <input id="BotaoConsultar" type="button" name="btnconsulta" value="Consultar" />
