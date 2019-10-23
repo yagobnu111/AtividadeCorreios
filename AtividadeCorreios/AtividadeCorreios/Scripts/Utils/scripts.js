@@ -15,9 +15,11 @@
             var info = `nCdEmpresa=08082650&sDsSenha=564321&sCepOrigem=${cepOrigem}&sCepDestino=${cepDestino}&nVlPeso=${peso}&nCdFormato=1&nVlComprimento=${comprimento}&nVlAltura=${altura}&nVlLargura=${largura}&sCdMaoPropria=n&nVlValorDeclarado=${valorDeclarado}&sCdAvisoRecebimento=n&nCdServico=04510&nVlDiametro=0&StrRetorno=xml&nIndicaCalculo=3`;
 ;
 
-            $.get(url, info , function (data) {
+            $.get(url, info, function (data) {
+                var dataJson = JSON.parse(data)
 
-                alert(data);
+                alert("Valor: " + dataJson.cServico.Valor + "\r\nPrazo de Entrega: " + dataJson.cServico.PrazoEntrega + " dias");
+                
 
          });    
     })
