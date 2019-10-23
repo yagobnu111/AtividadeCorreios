@@ -3,6 +3,7 @@
 	min-height: 560px;
 	margin: 100px auto;
 	position: relative;
+	top: 38px;
 }
 body {
 	background-image: url('https://image.freepik.com/vetores-gratis/reuniao-de-negocios-no-escritorio-da-empresa_81522-3945.jpg');
@@ -10,9 +11,20 @@ body {
 
 }
 #BotaoConsultar {
-	margin-left: 190px;
+	margin-left: 83%;
 	font-size: 14px;
 	font-family: sans-serif;
+}
+#Form {
+	padding: 66px;
+	background: #EEEEEE;
+}
+input {
+	margin-left: 60%;
+}
+
+#MeuSelect {
+	margin-left: 76%;
 }
 
 
