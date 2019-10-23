@@ -1,12 +1,13 @@
 ﻿<!DOCTYPE html>
 <html>
-
-<body>
+<head>
+    <link href="Content/styles.css" rel="stylesheet" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <form name="frm" action="frete2.asp" method="post" ID="Form1">
-        <fieldset style="background: EEEEEE;">
+</head>
+<body>
+    <form class="content" name="frm" action="frete2.asp" method="post" ID="Form1">
+        <fieldset style="background: #EEEEEE;">
             <legend>Calculo de Frete</legend>
             <div>
                 <span style="width:130px;">Codigo:</span>
@@ -83,7 +84,7 @@
             </div>
             <div>
                 <span>
-                    <input type="button" name="btnconsulta" value="Consultar" />
+                    <input id="BotaoConsultar" type="button" name="btnconsulta" value="Consultar" />
                 </span>
             </div>
         </fieldset>

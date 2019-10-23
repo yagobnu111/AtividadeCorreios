@@ -1,2 +1,18 @@
-﻿body {
+﻿.content {
+	width: 500px;
+	min-height: 560px;
+	margin: 100px auto;
+	position: relative;
 }
+body {
+	background-image: url('https://image.freepik.com/vetores-gratis/reuniao-de-negocios-no-escritorio-da-empresa_81522-3945.jpg');
+	background-size: auto auto;
+
+}
+#BotaoConsultar {
+	margin-left: 190px;
+	font-size: 14px;
+	font-family: sans-serif;
+}
+
+
