@@ -1,8 +1,6 @@
 ﻿$(document).ready(
-        
-
         function () {
-            $('input[type="button"]').click(
+            $('button[name="btnconsulta"]').click(
 
                 function () {
                     var cepOrigem = $('input[name="cepori"]').val();
