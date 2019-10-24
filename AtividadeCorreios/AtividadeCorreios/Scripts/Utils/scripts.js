@@ -18,7 +18,7 @@
                     $.get(url, info, function (data) {
                     var dataJson = JSON.parse(data)
 
-                    var informacoesPorUrl = "file:///C:/Users/900091/source/repos/AtividadeCorreios/AtividadeCorreios/AtividadeCorreios/newpage.html?preco=" + dataJson.cServico.Valor + "&prazo=" + dataJson.cServico.PrazoEntrega;
+                    var informacoesPorUrl = "newpage.html?preco=" + dataJson.cServico.Valor + "&prazo=" + dataJson.cServico.PrazoEntrega;
 
                     window.open(informacoesPorUrl);
 
