@@ -1,6 +1,6 @@
 ﻿$(document).ready(
         function () {
-            $('input[type="button"]').click(
+            $('button[name="btnconsulta"]').click(
 
                 function () {
                     var cepOrigem = $('input[name="cepori"]').val();
@@ -16,9 +16,13 @@
                     ;
 
                     $.get(url, info, function (data) {
-                        var dataJson = JSON.parse(data)
+                    var dataJson = JSON.parse(data)
 
-                        alert("Preco:" + dataJson.cServico.Valor + "/r/nPrazo: " + dataJson.cServico.PrazoEntrega);
+                    var informacoesPorUrl = "file:///C:/Users/900091/source/repos/AtividadeCorreios/AtividadeCorreios/AtividadeCorreios/newpage.html?preco=" + dataJson.cServico.Valor + "&prazo=" + dataJson.cServico.PrazoEntrega;
+
+                    window.open(informacoesPorUrl);
+
+                       
 
                     });
                 })
