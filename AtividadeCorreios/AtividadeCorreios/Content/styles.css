@@ -6,8 +6,9 @@
 	top: 38px;
 }
 body {
-	background-image: url('https://c1.staticflickr.com/4/3791/10587473905_7174892a49_b.jpg');
+	background-image: url('https://image.freepik.com/fotos-gratis/negocios-internacionais-e-conceito-de-negociacao-entre-cidades-e-paises_1412-564.jpg');
 	background-size: cover;
+	margin: 93px;
 }
 #BotaoConsultar {
 	margin-left: 42%;
@@ -20,6 +21,7 @@ body {
 	border-radius: 1em;
 	padding: 66px;
 	background: #EEEEEE;
+	position: relative;
 }
 input {
 	margin-left: 60%;

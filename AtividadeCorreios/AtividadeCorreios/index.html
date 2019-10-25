@@ -7,76 +7,113 @@
     <link href="Content/styles.css" rel="stylesheet" />
 </head>
 <body>
-    <form class="content" name="frm" action="frete2.asp" method="post" ID="Form1">
+    <form class="content" name="frm" action="frete2.asp" method="post" send-post="correiosambev" ID="Form1">
         <fieldset id="Form">
             <div id="titulo">
                 <span style="width:130px;">Calculo de Frete</span>
             </div>
             <div class="row">
-                <div class="input-group mb-1">
-                    <span class="input-group-text">Cep Origem:</span>
-                    <div>
-                        <input type="text" name="sCepOrigem" value="">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Cep:</span>
                     </div>
+                    <input type="text" class="form-control" name="sCepOrigem" placeholder="Informe cep de origem" />
                 </div>
             </div>
             <div class="row">
-                <div class="input-group mb-1">
-                    <span class="input-group-text">Cep Destino:</span>
-                    <div>
-                        <input type="text" name="sCepDestino" value="">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Cep:</span>
                     </div>
-                </div>
-            </div>
-            <br />
-            <div class="row">
-                <div class="input-group mb-1">
-                    <span class="input-group-text">Formato:</span>
-                    <div>
-                        <select id="MeuSelect" name="nCdFormato" size="1">
-                            <option value="1">Caixa/pacote</option>
-                        </select>
-                    </div>
+                    <input type="text" class="form-control" name="sCepDestino" placeholder="Informe cep de destino" />
                 </div>
             </div>
             <div class="row">
-                <div class="input-group mb-1">
-                    <span class="input-group-text">Peso:</span>
-                    <div>
-                        <input type="text" name="nVlPeso" value="">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Peso:</span>
                     </div>
+                    <input type="text" class="form-control" name="nVlPeso" placeholder="Informe peso" />
                 </div>
             </div>
             <div class="row">
-                <div class="input-group mb-1">
-                    <span class="input-group-text">Comprimento:</span>
-                    <div>
-                        <input type="text" name="nVlComprimento" value="">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Formato:</span>
                     </div>
+                    <input type="text" class="form-control" name="nCdFormato" placeholder="Informe formato" />
                 </div>
             </div>
             <div class="row">
-                <div class="input-group mb-1">
-                    <span class="input-group-text">Altura:</span>
-                    <div>
-                        <input type="text" name="nVlAltura" value="">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Comprimento:</span>
                     </div>
+                    <input type="text" class="form-control" name="nVlComprimento" placeholder="Informe comprimento" />
                 </div>
             </div>
             <div class="row">
-                <div class="input-group mb-1">
-                    <span class="input-group-text">Largura:</span>
-                    <div>
-                        <input type="text" name="nVlLargura" value="">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Altura:</span>
                     </div>
+                    <input type="text" class="form-control" name="nVlAltura" placeholder="Informe altura" />
                 </div>
             </div>
             <div class="row">
-                <div class="input-group mb-1">
-                    <span class="input-group-text">Valor declarado:</span>
-                    <div>
-                        <input type="text" name="nVlValorDeclarado" value="">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Largura:</span>
                     </div>
+                    <input type="text" class="form-control" name="nVlLargura" placeholder="Informe largura" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Diametro:</span>
+                    </div>
+                    <input type="text" class="form-control" name="nVlDiametro" placeholder="Informe diametro" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Mão:</span>
+                    </div>
+                    <input type="text" class="form-control" name="sCdMaoPropria" placeholder="Informe se contem mão propria" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Valor:</span>
+                    </div>
+                    <input type="text" class="form-control" name="nVlValorDeclarado" placeholder="Informe o valor da mercadoria" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Aviso:</span>
+                    </div>
+                    <input type="text" class="form-control" name="sCdAvisoRecebimento" placeholder="Informe se tera aviso de recebimento" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Retorno:</span>
+                    </div>
+                    <input type="text" class="form-control"  placeholder="Informe informe o tipo de retorno xml" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Cod:</span>
+                    </div>
+                    <input type="text" class="form-control" name="nCdServico" placeholder="Informe o codigo do serviço" />
                 </div>
             </div>
             <br />
