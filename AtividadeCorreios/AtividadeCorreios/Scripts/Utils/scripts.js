@@ -8,7 +8,10 @@
                 data = JSON.parse(data);
         $.each(data.cServico, function (key, value) {
         $('p[name="{key}"'.replace("{key}", key)).text(value);
-         });
+        });
+
+           alert("Valor: " + data.cServico.Valor + "\nPrazo: " + data.cServico.PrazoEntrega + " dias" )
+
      });
    });
 });
