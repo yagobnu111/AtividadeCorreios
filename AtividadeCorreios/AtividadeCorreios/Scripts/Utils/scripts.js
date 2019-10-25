@@ -3,10 +3,6 @@
          var information = $('form[name="frm"]').serializeArray();
          var obterAtributo = $('form[name="frm"]').attr('send-post');
 
-
-
-
-
        $.post("http://usysweb.com.br/api/" + obterAtributo + ".php?giomar=true" , information, function (data) {
                 data = JSON.parse(data);
         $.each(data.cServico, function (key, value) {
